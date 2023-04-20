@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+
 body {
     margin: 10px;
     background-color: aliceblue;
@@ -9,6 +13,15 @@ body {
 
 h1 {
     font-family: 'Sedgwick Ave Display', cursive; 
+    font-size:80px;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h3 {
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 p {
@@ -18,7 +31,7 @@ p {
 nav {
     display: flex;
     flex-wrap:wrap;
-    background-color: rgb(50, 42, 66);
+    background-color:rgb(50, 42, 66);
     color: white;  
 }
 
@@ -33,7 +46,9 @@ nav {
   }
 
   img {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     
   }
+
+  
