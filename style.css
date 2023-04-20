@@ -30,7 +30,7 @@ p {
 
 nav {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     background-color:rgb(50, 42, 66);
     color: white;  
 }
