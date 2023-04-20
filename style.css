@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+body {
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: 'Sedgwick Ave Display', cursive; 
+}
+
+p {
+  font-family: 'Lora', serif;s
+}
+
+nav {
+    display: flex;
+    flex-wrap:wrap;
+    background-color: rgb(50, 42, 66);
+    color: white;  
+}
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+  }
+
+  nav li {
+    margin: 5px;
+  }
+
+  img {
+    height: 350px;
+    width: 350px;
+    
+  }
