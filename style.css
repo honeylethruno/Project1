@@ -8,7 +8,7 @@
 
 body {
     margin: 10px;
-    background-color: aliceblue;
+    background: #ecfbff;
 }
 
 h1 {
@@ -31,8 +31,8 @@ p {
 nav {
     display: flex;
     flex-wrap: wrap;
-    background-color:rgb(50, 42, 66);
-    color: white;  
+    background: #5f7daf;
+    color: black;
 }
 
   nav ul {
@@ -47,8 +47,27 @@ nav {
 
   img {
     height: 300px;
-    width: 300px;
-    
+    width: 300px; 
   }
+
+ footer{
+  background:  #284770;
+  color: white; 
+ }
+
+ .major {
+  background: #efbad6;
+ }
+
+ .minor {
+  background: #dadafc;
+ }
+
+ .btn {
+  background: #fef5d4;
+  color: black
+ }
+
+ 
 
   
