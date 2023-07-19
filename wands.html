@@ -1,254 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <!--bootsrap link-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Wands</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    </head>
-      
-    <!--custom css link-->
-    <link rel="stylesheet" href="style.css"></link>
 
-    <style>
-        .card:hover {
-            background: #feca65;
-        }
-    </style>
-     
-    <body>
-        
-        <!--navbar-->
-        <header class="sticky-top">
-            
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <label class="logo">AD</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="faqs.html">FAQS</a></li>
-                    <li><a class="active" href="cards.html">Cards</a></li>
-                </ul>
-            </nav>
-          </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit of Wands</title>
+    <!--boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- hero -->
-        <section class="container-fluid">
-            
-                <div class="row">
-                    <div class="col-mt-5 p-5"></div>
-                        <h1 class="text-center">Angelus Dimidium</h1>
-                        <p class="text-center">A guide to all 78 Tarot Cards</p>   
-                    </div>
+<!--own style-->
+<style>
+    .card:hover {
+        background: #fea9ca;
+        border: 5px solid goldenrod;
+
+    }
+
+    .img-fluid {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .card-body:hover .img-fluid {
+        opacity: 0.3;
+    }
+
+    .card-body:hover .middle {
+        opacity: 1;
+    }
+
+    .card-text {
+        color: black;
+
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+</style>
+
+<body>
+
+    <!--navbar-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container">
+                <a class="navbar-brand logo text-white" href="index.html">Angelus Dimidium</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navlink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink" href="faqs.html">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-        </section>
+            </div>
+        </nav>
+    </header>
 
     <!--cards-->
 
-        <!--minor-->
-        <div class="minor">
+    <!--wand-->
+
+    <div class="wand">
         <section class="container-fluid p-5">
-          <div class="row">
-              <div class="col-12 text-center">
-                  <h2 class="p-3">Minor Arcana Cards</h2>
-              </div>
-          </div>
 
-          <div class="row mt-4">
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\cup\king.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="cup.html" class="btn btn-info">The Cups</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\sword\queen.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="sword.html" class="btn btn-info">The Sword</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\pen\knight.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="pen.html" class="btn btn-info">The Pentacles</a>
-                            </div>  
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="wands.html" class="btn btn-info">The Wands</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
 
-              
-              
-          </div>
-      </section>
-        </div>
-        
-            <!--wand-->
-
-        <div class="wand">
-            <section class="container-fluid p-5">
-              
-  
-              <div class="row">
-                  <div class="col-12 text-start">
-                      <h2 class="p-5">The Meanings Of The Suit Of Wands</h2>
-  
-                  </div>
-              </div>
-  
-              <div class="row">
-                  <div class="col">
-                      <h3 class="text-decoration-underline text-secondary p-3">What Do The Swords Tarot Cards Mean In A Reading?</h3>
-                      <p>The meanings of the Wands Tarot cards deal with the spiritual level of consciousness and mirror what is important to you at the core of your being. They address what makes you tick – your personality, ego, enthusiasm, self-concept, and personal energy, both internal and external.</p>
-                      <p>The negative aspects of the Suit of Wands include illusion, egotistical behaviour, impulsiveness, a lack of direction or purpose, or feeling meaningless.</p>
-                      <p>Wands Tarot cards often represent the astrological signs of Fire – Leo, Sagittarius and Aries. When you see a Wands Court Card in a Tarot reading, it often relates to a person with a Leo, Sagittarius or Aries star sign. Generally, Wands people are energetic, charismatic, warm, spiritual.</p>
-                    </div>
-              </div>
-  
-              <div class="row">
-                  <div class="col p-3">
-                      <h3 class="text-decoration-underline text-secondary p-3">What Does It Mean When A Tarot Reading Is Mostly Wands Tarot Cards?</h3>
-                      <p>Should a Tarot reading be predominantly Wands cards, you can be sure that you are seeking solutions to issues that are based mainly in the realm of thought, or that are in the first stages of development. You may also be seeking greater purpose and meaning in your life and will want to understand more about what motivates and energises you.</p>
-                  </div>
-              </div>
-
-        <div class="row mt-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\ace.png" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> inspiration, new opportunities, growth potential</p>
-                            <p class="card-text"><b>REVERSED:</b> an emerging idea, lack of direction, distractions, delays</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\02.png" class="img-fluid product" alt="">
-                        <p class="card-text"><b>UPRIGHT:</b> future planning, progress, decisions, discovery</p>
-                            <p class="card-text"><b>REVERSED:</b> personnal growth, inner alignment, fear of unknown, lack of planning</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\03.webp" class="img-fluid product" alt="">
-                        <p class="card-text"><b>UPRIGHT:</b> progress, expansion, foresight, overseas opportunities</p>
-                            <p class="card-text"><b>REVERSED:</b> playing small, lack of foresight, unexpected delays</p>  
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\04.webp" class="img-fluid product" alt="">
-                        <p class="card-text"><b>UPRIGHT:</b> celebration, joy, harmony, relaxation, homecoming</p>
-                            <p class="card-text"><b>REVERSED:</b> personal celebration, inner harmony, conflict with others, transition</p>
-                    </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="p-5">The Meanings Of The Suit Of Wands</h2>
                 </div>
             </div>
 
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\05.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> conflicts, disagreements, competition, tension, diversity</p>
-                            <p class="card-text"><b>REVERSED:</b> inner conflict, conflict avoidance, tension release</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-decoration-underline text-secondary p-3">What Do The Swords Tarot Cards Mean In A
+                        Reading?</h3>
+                    <p>The meanings of the Wands Tarot cards deal with the spiritual level of consciousness and mirror
+                        what is important to you at the core of your being. They address what makes you tick – your
+                        personality, ego, enthusiasm, self-concept, and personal energy, both internal and external.</p>
+                    <p>The negative aspects of the Suit of Wands include illusion, egotistical behaviour, impulsiveness,
+                        a lack of direction or purpose, or feeling meaningless.</p>
+                    <p>Wands Tarot cards often represent the astrological signs of Fire – Leo, Sagittarius and Aries.
+                        When you see a Wands Court Card in a Tarot reading, it often relates to a person with a Leo,
+                        Sagittarius or Aries star sign. Generally, Wands people are energetic, charismatic, warm,
+                        spiritual.</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\06.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> success, public recognition, progress, self confidence</p>
-                            <p class="card-text"><b>REVERSED:</b> private achivement, personal definition of success, fall from grace, egotism</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\07.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> challege, competition, protection, perseverance</p>
-                            <p class="card-text"><b>REVERSED:</b> exhaustion, giving up, overwhelmed</p>  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\08.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> movement, fast paced change, action, alignment, air travel</p>
-                            <p class="card-text"><b>REVERSED:</b> delays, frustration, resisting change, internal alignment</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
+            <div class="row">
+                <div class="col p-3">
+                    <h3 class="text-decoration-underline text-secondary p-3">What Does It Mean When A Tarot Reading Is
+                        Mostly Wands Tarot Cards?</h3>
+                    <p>Should a Tarot reading be predominantly Wands cards, you can be sure that you are seeking
+                        solutions to issues that are based mainly in the realm of thought, or that are in the first
+                        stages of development. You may also be seeking greater purpose and meaning in your life and will
+                        want to understand more about what motivates and energises you.</p>
+                </div>
+            </div>
+
+
+            <div class="flex-container">
                 <div class="row mt-4">
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="tarot\minor\wand\09.webp" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> resilience, courage, persistence, test of faith, bounderies</p>
-                            <p class="card-text"><b>REVERSED:</b> inner resources, struggle, overwhelm, defensive, paranoia</p>
+                                <img src="tarot\minor\wand\ace.png" class="img-fluid product" alt="">
+                                <div class="middle">
+                                    <p class="card-text"><b>UPRIGHT:</b> inspiration, new opportunities, growth
+                                        potential</p>
+                                    <hr>
+                                    <p class="card-text"><b>REVERSED:</b> an emerging idea, lack of direction,
+                                        distractions, delays</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="tarot\minor\wand\10.png" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> burden, extra responsility, hard work, completion</p>
-                            <p class="card-text"><b>REVERSED:</b> do it all, carrying the burden, delegation, release</p>
+                                <img src="tarot\minor\wand\02.png" class="img-fluid product" alt="">
+                                <div class="middle">
+                                    <p class="card-text"><b>UPRIGHT:</b> future planning, progress, decisions, discovery
+                                    </p>
+                                    <hr>
+                                    <p class="card-text"><b>REVERSED:</b> personnal growth, inner alignment, fear of
+                                        unknown, lack of planning</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> inspiration, ideas, discovery, limitless potential, free spirit</p>
-                            <p class="card-text"><b>REVERSED:</b> newly formed ideas, redirecting energy, self limiting beliefs, a spiritual path</p>  
+                                <img src="tarot\minor\wand\03.webp" class="img-fluid product" alt="">
+                                <div class="middle">
+                                    <p class="card-text"><b>UPRIGHT:</b> progress, expansion, foresight, overseas
+                                        opportunities</p>
+                                    <hr>
+                                    <p class="card-text"><b>REVERSED:</b> playing small, lack of foresight, unexpected
+                                        delays</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="tarot\minor\wand\knight.png" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> energy, passion, inspired action, adventure, impulsiveness</p>
-                            <p class="card-text"><b>REVERSED:</b> passion project, haste, scatttred energy, delays, frustration</p>
+                                <img src="tarot\minor\wand\04.webp" class="img-fluid product" alt="">
+                                <div class="middle">
+                                    <p class="card-text"><b>UPRIGHT:</b> celebration, joy, harmony, relaxation,
+                                        homecoming</p>
+                                    <hr>
+                                    <p class="card-text"><b>REVERSED:</b> personal celebration, inner harmony, conflict
+                                        with others, transition</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -257,53 +189,226 @@
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <img src="tarot\minor\wand\queen.webp" class="img-fluid product" alt="">
-                                    <p class="card-text"><b>UPRIGHT:</b> courage, confidence, independence, social butterfly, determination</p>
-                            <p class="card-text"><b>REVERSED:</b> self-respect, self-confidence, introverted, re establish sense of self</p>
+                                    <img src="tarot\minor\wand\05.webp" class="img-fluid product" alt="">
+                                    <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> conflicts, disagreements, competition,
+                                            tension, diversity</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> inner conflict, conflict avoidance,
+                                            tension release</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <img src="tarot\minor\wand\king.webp" class="img-fluid product" alt="">
-                                    <p class="card-text"><b>UPRIGHT:</b> natural born leader, vision, entreprenuer, honour</p>
-                                    <p class="card-text"><b>REVERSED:</b> impulsiveness, haste, ruthless, high expectation</p>
+                                    <img src="tarot\minor\wand\06.webp" class="img-fluid product" alt="">
+                                    <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> success, public recognition, progress, self
+                                            confidence</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> private achivement, personal definition of
+                                            success, fall from grace, egotism</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="tarot\minor\wand\07.webp" class="img-fluid product" alt="">
+                                    <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> challege, competition, protection,
+                                            perseverance</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> exhaustion, giving up, overwhelmed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="tarot\minor\wand\08.webp" class="img-fluid product" alt="">
+                                    <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> movement, fast paced change, action,
+                                            alignment, air travel</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> delays, frustration, resisting change,
+                                            internal alignment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="tarot\minor\wand\09.webp" class="img-fluid product" alt="">
+                                        <div class="middle">
+                                            <p class="card-text"><b>UPRIGHT:</b> resilience, courage, persistence, test
+                                                of faith, bounderies</p>
+                                            <hr>
+                                            <p class="card-text"><b>REVERSED:</b> inner resources, struggle, overwhelm,
+                                                defensive, paranoia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="tarot\minor\wand\10.png" class="img-fluid product" alt="">
+                                        <div class="middle">
+                                            <p class="card-text"><b>UPRIGHT:</b> burden, extra responsility, hard work,
+                                                completion</p>
+                                            <hr>
+                                            <p class="card-text"><b>REVERSED:</b> do it all, carrying the burden,
+                                                delegation, release</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">
+                                        <div class="middle">
+                                            <p class="card-text"><b>UPRIGHT:</b> inspiration, ideas, discovery,
+                                                limitless potential, free spirit</p>
+                                            <hr>
+                                            <p class="card-text"><b>REVERSED:</b> newly formed ideas, redirecting
+                                                energy, self limiting beliefs, a spiritual path</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img src="tarot\minor\wand\knight.png" class="img-fluid product" alt="">
+                                        <div class="middle">
+                                            <p class="card-text"><b>UPRIGHT:</b> energy, passion, inspired action,
+                                                adventure, impulsiveness</p>
+                                            <hr>
+                                            <p class="card-text"><b>REVERSED:</b> passion project, haste, scatttred
+                                                energy, delays, frustration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="tarot\minor\wand\queen.webp" class="img-fluid product" alt="">
+                                            <div class="middle">
+                                                <p class="card-text"><b>UPRIGHT:</b> courage, confidence, independence,
+                                                    social butterfly, determination</p>
+                                                <hr>
+                                                <p class="card-text"><b>REVERSED:</b> self-respect, self-confidence,
+                                                    introverted, re establish sense of self</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="tarot\minor\wand\king.webp" class="img-fluid product" alt="">
+                                            <div class="middle">
+                                                <p class="card-text"><b>UPRIGHT:</b> natural born leader, vision,
+                                                    entreprenuer, honour</p>
+                                                <hr>
+                                                <p class="card-text"><b>REVERSED:</b> impulsiveness, haste, ruthless,
+                                                    high expectation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+        </section>
+    </div>
+
+    <!--minor-->
+    <div class="minor">
+        <section class="container-fluid p-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="p-3">Minor Arcana Cards</h2>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="tarot\minor\cup\king.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="wands.html" class="btn btn-info">The Cups</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="tarot\minor\sword\queen.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="sword.html" class="btn btn-info">The Sword</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="tarot\minor\pen\knight.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="pen.html" class="btn btn-info">The Pentacles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="wands.html" class="btn btn-info">The Wands</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
-            </section>
-            </div>
-            
-       
-      <!--footer-->
-      <footer class="container-fluid p-4">
+        </section>
+    </div>
+
+    <!--footer-->
+    <footer class="container-fluid p-4">
         <div class="row">
             <div class="col-md-8 my-auto">
                 <h2>Contact Us</h2>
                 <p>angelusdimidium@supreme.com</p>
-                <p>(00) 111 222 333 444 </p>
+                <p>(00) 1111 2222 3333 4444 </p>
             </div>
             <div class="col-md-4 my-auto">
                 <p class="fw-bold mb-0">Angelus Dimidium</p>
-                
+
                 <small>Website developed by: <strong>WD63--Honeyleth Ruño</strong></small>
             </div>
         </div>
     </footer>
 
-             
 
-              
-            </div>
-          </div>
+</body>
 
-
-          
-
-       
-    </body>
 </html>

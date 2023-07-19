@@ -1,170 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <!--bootsrap link-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Minor Arcana</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    </head>
-      
-    <!--custom css link-->
-    <link rel="stylesheet" href="style.css"></link>
 
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        .cups:hover {
-            background:#cae8da;
-        }
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        .sword:hover {
-            background:#a6c8db;
-        }
+<!--own style-->
+<style>
+    .cups:hover {
+        background: #cae8da;
+    }
 
-        .pen:hover {
-            background:#fddca6;
-        }
+    .sword:hover {
+        background: #a6c8db;
+    }
 
-        .wand:hover {
-            background:#feca65;
-        }
-    </style>
-     
-    <body>
-        
-        <!--navbar-->
-        <header class="sticky-top">
-            
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <label class="logo">AD</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="faqs.html">FAQS</a></li>
-                    <li><a class="active" href="cards.html">Cards</a></li>
-                </ul>
-            </nav>
-          </header>
+    .pen:hover {
+        background: #fddca6;
+    }
 
+    .wand:hover {
+        background: #feca65;
+    }
+</style>
 
-        <!-- hero -->
-        <section class="container-fluid">
-            
-                <div class="row">
-                    <div class="col-mt-5 p-5"></div>
-                        <h1 class="text-center">Angelus Dimidium</h1>
-                        <p class="text-center">A guide to all 78 Tarot Cards</p>   
-                    </div>
+<body>
+
+    <!--navbar-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container">
+                <a class="navbar-brand logo text-white" href="index.html">Angelus Dimidium</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navlink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink" href="faqs.html">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-        </section>
+            </div>
+        </nav>
+    </header>
 
-    
-
-        <!--minor-->
-        <div class="minor">
+    <!--minor-->
+    <div class="minor">
         <section class="container-fluid p-5">
-          <div class="row">
-              <div class="col-12 text-center">
-                  <h2 class="p-3">Minor Arcana Cards</h2>
-              </div>
-          </div>
-
-          <div class="row mt-4">
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\cup\king.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="cup.html" class="btn btn-info">The Cups</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\sword\queen.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="sword.html" class="btn btn-info">The Sword</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\pen\knight.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="pen.html" class="btn btn-info">The Pentacles</a>
-                            </div>  
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <div class="card-body text-center">
-                          <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">
-                            <div class="card-body">
-                              <a href="wands.html" class="btn btn-info">The Wands</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-
-              
-              
-          </div>
-      </section>
-        </div>
-        
-        <!--cups-->
-
-        <div class="cups">
-            <section class="container-fluid p-5">
-              
-  
-              <div class="row">
-                  <div class="col-12 text-start">
-                      <h2 class="p-5">The Suit Of Cups</h2>
-  
-                  </div>
-              </div>
-  
-            
-
-        <div class="row mt-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\cup\ace.webp" class="img-fluid product" alt="">   
-                    </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="p-3">Minor Arcana Cards</h2>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\cup\02.webp" class="img-fluid product" alt="">
-                    </div>
+
+            <div class="row">
+                <div class="col mt-5">
+                    <h3 class="text-decoration-underline text-secondary p-3">What Does A Minor Arcana Card Mean In A
+                        Tarot Reading?</h3>
+                    <p>The 56 Minor Arcana cards reflect the trials and tribulations that we experience on a daily
+                        basis.
+                        Even though the Minor Arcana cards are called 'minor', it doesn't mean that these Tarot cards
+                        won't have a significant impact in your life.
+                        These Tarot cards relate to what's happening in your daily life, and can offer insight into how
+                        your present situation is affecting you and what steps you need to take to manifest your goals.
+                    </p>
+                    <p>The Minor Arcana cards typically have a temporary influence
+                        - that is, they represent an energy that is moving through your life right now and that can be
+                        easily changed,
+                        depending on the actions you take.</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\cup\03.webp" class="img-fluid product" alt="">  
-                    </div>
+
+            <div class="row">
+                <div class="col p-3">
+                    <h3 class="text-decoration-underline text-secondary p-3">What Does It Mean When A Tarot Reading Is
+                        Mostly Minor Arcana Tarot Cards?</h3>
+                    <p>When your Tarot reading has mostly Minor Arcana Tarot cards,
+                        it is a sign that you are dealing with day-to-day issues which will not necessarily have a
+                        lasting influence on your life.
+                        These issues are passing through, presenting you with an opportunity to learn from these
+                        experiences.
+                        Look to any Major Arcana cards in the Tarot reading to identify and understand these lessons and
+                        how they mayimpact your life in the long-term.</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\cup\04.webp" class="img-fluid product" alt="">
-                    </div>
+
+            <div class="row">
+                <div class="col p-3">
+                    <h3 class="text-decoration-underline text-secondary p-3">The Minor Arcana Suits</h3>
+                    <p>There are four different Tarot Suits within the Minor Arcana:</p>
+
+                    <p>The Suit of Cups represents your feelings, emotions, intuition and creativity.
+                        The Cups cards often appear in Tarot readings about relationships and your emotional connection
+                        with
+                        yourself and others.</p>
+
+                    <p>The Suit of Pentacles represents your finances, work and material possessions.
+                        The Pentacles cards often appear in Tarot readings about career and financial wealth.</p>
+
+                    <p>The Suit of Swords represents your thoughts, words and actions.
+                        The Swords cards often appear in Tarot readings about communicating your ideas, making
+                        decisions, and
+                        asserting your power.</p>
+
+                    <p>The Suit of Wands represents your energy, motivation and passion.
+                        The Wands cards often appear in Tarot readings about life purpose, spirituality and new ideas.
+                    </p>
+
+                    <p>Each Suit contains 10 numbered cards and 4 Court Cards (Page, Knight, Queen and King).
+                        The Tarot Court Cards each represent different personality characteristics we may choose to
+                        express at any
+                        given time.</p>
                 </div>
             </div>
 
@@ -172,491 +135,68 @@
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <img src="tarot\minor\cup\05.webp" class="img-fluid product" alt="">
+                            <img src="tarot\minor\cup\king.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="cup.html" class="btn btn-info">The Cups</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <img src="tarot\minor\cup\06.webp" class="img-fluid product" alt="">
+                            <img src="tarot\minor\sword\queen.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="sword.html" class="btn btn-info">The Sword</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <img src="tarot\minor\cup\07.webp" class="img-fluid product" alt="">  
+                            <img src="tarot\minor\pen\knight.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="pen.html" class="btn btn-info">The Pentacles</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
-                            <img src="tarot\minor\cup\08.webp" class="img-fluid product" alt="">
+                            <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">
+                            <div class="card-body">
+                                <a href="wands.html" class="btn btn-info">The Wands</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\cup\09.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\cup\10.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\cup\page.webp" class="img-fluid product" alt="">  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\cup\knight.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row mt-4">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\cup\queen.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\cup\king.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        
 
             </div>
-            </section>
-            </div>
-            <hr>
+        </section>
+    </div>
 
-        <!--sword-->
 
-        <div class="sword">
-            <section class="container-fluid p-5">
-              
-  
-              <div class="row">
-                  <div class="col-12 text-start">
-                      <h2 class="p-5">The Suit Of Swords</h2>
-  
-                  </div>
-              </div>
-  
-              
 
-        <div class="row mt-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\sword\ace.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\sword\02.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\sword\03.webp" class="img-fluid product" alt="">  
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\sword\04.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\sword\05.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\sword\06.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\sword\07.webp" class="img-fluid product" alt="">  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\sword\08.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\sword\09.webp" class="img-fluid product" alt="">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\sword\10.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\sword\page.webp" class="img-fluid product" alt="">  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\sword\knight.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\sword\queen.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\sword\king.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        
-
-            </div>
-            </section>
-            </div>
-            <hr>
-
-            <!--pentacles-->
-
-        <div class="pen">
-            <section class="container-fluid p-5">
-              
-  
-              <div class="row">
-                  <div class="col-12 text-start">
-                      <h2 class="p-5">The Suit Of Pentacles</h2>
-  
-                  </div>
-              </div>
-  
-              
-
-        <div class="row mt-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\pen\ace.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\pen\02.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\pen\03.webp" class="img-fluid product" alt="">  
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\pen\04.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\pen\05.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\pen\06.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\pen\07.webp" class="img-fluid product" alt="">  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\pen\08.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\pen\09.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\pen\10.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\pen\page.webp" class="img-fluid product" alt="">  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\pen\knight.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\pen\queen.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\pen\king.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        
-
-            </div>
-            </section>
-            </div>
-            <hr>
-
-            <!--wand-->
-
-        <div class="wand">
-            <section class="container-fluid p-5">
-              
-  
-              <div class="row">
-                  <div class="col-12 text-start">
-                      <h2 class="p-5">The Suit Of Wands</h2>
-  
-                  </div>
-              </div>
-  
-              
-
-        <div class="row mt-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\ace.png" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\02.png" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\03.webp" class="img-fluid product" alt="">  
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="tarot\minor\wand\04.webp" class="img-fluid product" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\05.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\06.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\07.webp" class="img-fluid product" alt="">  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\minor\wand\08.webp" class="img-fluid product" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\wand\09.webp" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\wand\10.png" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\wand\page.webp" class="img-fluid product" alt="">  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\minor\wand\knight.png" class="img-fluid product" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\wand\queen.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\minor\wand\king.webp" class="img-fluid product" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        
-
-            </div>
-            </section>
-            </div>
-            
-       
-      <!--footer-->
-      <footer class="container-fluid p-4">
+    <!--footer-->
+    <footer class="container-fluid p-4">
         <div class="row">
             <div class="col-md-8 my-auto">
                 <h2>Contact Us</h2>
                 <p>angelusdimidium@supreme.com</p>
-                <p>(00) 111 222 333 444 </p>
+                <p>(00) 1111 2222 3333 4444 </p>
             </div>
             <div class="col-md-4 my-auto">
                 <p class="fw-bold mb-0">Angelus Dimidium</p>
-                
+
                 <small>Website developed by: <strong>WD63--Honeyleth Ruño</strong></small>
             </div>
         </div>
     </footer>
 
-             
+</body>
 
-              
-            </div>
-          </div>
-
-
-          
-
-       
-    </body>
 </html>

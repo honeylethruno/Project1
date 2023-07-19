@@ -1,316 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <!--bootsrap link-->
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Major Arcana</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!--boostrap css-->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous">
+
+        <!--custom css file link-->
+        <link rel="stylesheet" href="style.css">
     </head>
-      
-    <!--custom css link-->
-    <link rel="stylesheet" href="style.css"></link>
-     
+
+    <!--own style-->
     <style>
+
+   
         .card:hover {
-            background: #ec99c5;
+            background: #dadafc;
+            border: 5px solid goldenrod;
         }
-    </style>
-    
-    <body>
-        
-        <!--navbar-->
-        <header class="sticky-top">
-            
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <label class="logo">AD</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="faqs.html">FAQS</a></li>
-                    <li><a class="active" href="cards.html">Cards</a></li>
-                </ul>
-            </nav>
-          </header>
 
 
-        <!-- hero -->
-        <section class="container-fluid">
-            
-                <div class="row">
-                    <div class="col-mt-5 p-5"></div>
-                        <h1 class="text-center">Angelus Dimidium</h1>
-                        <p class="text-center">A guide to all 78 Tarot Cards</p>   
-                    </div>
-                </div>
-        </section>
+        .img-fluid {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate( -50%, -50%);
+            text-align: center;
+        }
+
+        .card-body:hover .img-fluid {
+            opacity: 0.3;
+        }
+
+        .card-body:hover .middle {
+            opacity: 1;
+        }
+
+        .card-text {
+            font-size: 18px;
+            padding: 16px 32px;
+        }
 
        
-          
+    </style>
+
+    <body>
+
+    <!--navbar-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg p-3">
+          <div class="container">
+            <a class="navbar-brand logo text-white" href="index.html">Angelus Dimidium</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navlink" href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
     <!--cards-->
 
           <!--major-->
           <div class="major">
-          <section class="container-fluid p-5">
-            
-
-            <div class="row">
-                <div class="col-12 text-start">
-                    <h2 class="p-5">Major Arcana Cards</h2>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <h3 class="text-decoration-underline text-secondary p-3">What Does A Major Arcana Card Mean In A Tarot Reading?</h3>
-                    <p>When you see a Major Arcana card in a Tarot reading, you are being called to reflect on the life lessons and themes that are currently being experienced at this time. A Major Arcana card will often set the scene for the entire Tarot reading, with the other cards relating back to that core Major Arcana meaning.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col p-3">
-                    <h3 class="text-decoration-underline text-secondary p-3">What Does It Mean When A Tarot Reading Is Mostly Major Arcana Tarot Cards?</h3>
-                    <p>When a Tarot reading is predominantly made up of Major Arcana cards, you are experiencing life-changing events that will have long-term effects. There are important lessons that you must pay attention to in order to progress further in your spiritual and personal quest.</p>
-                    <p>If many of the Major Arcana Tarot cards are reversed, however, it may be a sign that you are not paying enough attention to these important life lessons and you need to first master the lesson before being able to move forward.</p>
-                </div>
-            </div>
-            
-
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\major\fool.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> beginnings, innocence, spointaneity, free spirited</p>
-                            <p class="card-text"><b>REVERSED:</b> holding back, restlesness, risk-taking</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\major\magician.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> manifestation, resourcefulness, power, inspired action</p>
-                            <p class="card-text"><b>REVERSED:</b> manipulation, poor planning, untapped talents</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\major\highpriestess.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> intuition, sacred knowledge, divine feminine, the subconscious mind</p>
-                            <p class="card-text"><b>REVERSED:</b> secrets, disconnected from intuition, withdrawal and silence</p>  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="tarot\major\empress.webp" class="img-fluid product" alt="">
-                            <p class="card-text"><b>UPRIGHT:</b> femininity, beauty, nature, nurturing, abundance</p>
-                            <p class="card-text"><b>REVERSED:</b> creative blocks, dependence on others</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\major\emperor.webp" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> authority, establishment, struture, a father figure</p>
-                                <p class="card-text"><b>REVERSED:</b> domination, excessive control, lack of discipline, inflexibility</p>
+            <section class="container-fluid p-5">
+              
+  
+              <div class="row">
+                  <div class="col-12 text-center">
+                      <h2 class="p-5">Major Arcana Cards</h2>
+                  </div>
+              </div>
+  
+              <div class="row">
+                  <div class="col">
+                      <h3 class="text-decoration-underline text-secondary p-3">What Does A Major Arcana Card Mean In A Tarot Reading?</h3>
+                      <p>When you see a Major Arcana card in a Tarot reading, you are being called to reflect on the life lessons and themes that are currently being experienced at this time. A Major Arcana card will often set the scene for the entire Tarot reading, with the other cards relating back to that core Major Arcana meaning.</p>
+                  </div>
+              </div>
+  
+              <div class="row">
+                  <div class="col p-3">
+                      <h3 class="text-decoration-underline text-secondary p-3">What Does It Mean When A Tarot Reading Is Mostly Major Arcana Tarot Cards?</h3>
+                      <p>When a Tarot reading is predominantly made up of Major Arcana cards, you are experiencing life-changing events that will have long-term effects. There are important lessons that you must pay attention to in order to progress further in your spiritual and personal quest.</p>
+                      <p>If many of the Major Arcana Tarot cards are reversed, however, it may be a sign that you are not paying enough attention to these important life lessons and you need to first master the lesson before being able to move forward.</p>
+                  </div>
+              </div>
+              
+              <div class="flex-container">
+              <div class="row mt-4">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <img src="tarot\major\fool.webp" class="img-fluid product" alt="">
+                              <div class="middle">
+                              <p class="card-text"><b>UPRIGHT:</b> beginnings, innocence, spointaneity, free spirited</p>
+                              <hr>
+                              <p class="card-text"><b>REVERSED:</b> holding back, restlesness, risk-taking</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\major\hierophant.webp" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> spiritual wisdom, religious belief, conformmity, tradition, institutions</p>
-                            <p class="card-text"><b>REVERSED:</b> personal beliefs, freedom, challeging the status quo</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\major\lovers.webp" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> love, harmony, relationships, values alignment, choices</p>
-                            <p class="card-text"><b>REVERSED:</b> self love, disharmony, imbalance, misalignment of values</p>  
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <img src="tarot\major\magician.webp" class="img-fluid product" alt="">
+                              <div class="middle">
+                              <p class="card-text"><b>UPRIGHT:</b> manifestation, resourcefulness, power, inspired action</p>
+                              <hr>
+                              <p class="card-text"><b>REVERSED:</b> manipulation, poor planning, untapped talents</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img src="tarot\major\chariot.webp" class="img-fluid product" alt="">
-                                <p class="card-text"><b>UPRIGHT:</b> control, willpower, success, action, determination</p>
-                                <p class="card-text"><b>REVERSED:</b> self discipline, opposition, lack of direction</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\major\strength.webp" class="img-fluid product" alt="">
-                                    <p class="card-text"><b>UPRIGHT:</b> strength, courage, persuation, influence, compassion</p>
-                                    <p class="card-text"><b>REVERSED:</b> inner strength, self doubt, low energy, raw emotion</p>
-                                </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <img src="tarot\major\highpriestess.webp" class="img-fluid product" alt="">
+                              <div class="middle">
+                                    <p class="card-text"><b>UPRIGHT:</b> intuition, sacred knowledge, divine feminine, the subconscious mind</p>
+                                    <hr>
+                                    <p class="card-text"><b>REVERSED:</b> secrets, disconnected from intuition, withdrawal and silence</p>  
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\major\hermit.webp" class="img-fluid product" alt="">
-                                    <p class="card-text"><b>UPRIGHT:</b> soul searching, introspection, being alone, inner guidance</p>
-                                    <p class="card-text"><b>REVERSED:</b> isolation, loneliness, withdrawal</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\major\wheel.webp" class="img-fluid product" alt="">
-                                    <p class="card-text"><b>UPRIGHT:</b> good luck, karma, life cycles, destiny, a turning point</p>
-                                    <p class="card-text"><b>REVERSED:</b> bad luck, resistance to change, breaking cycles</p>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="tarot\major\justice.webp" class="img-fluid product" alt="">
-                                    <p class="card-text"><b>UPRIGHT:</b> justice, fairness, truth, cause and effect, law</p>
-                                    <p class="card-text"><b>REVERSED:</b> unfairness, lack of accountability, dishonesty</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="tarot\major\hanged-man.webp" class="img-fluid product" alt="">
-                                        <p class="card-text"><b>UPRIGHT:</b> paused, surrender, letting go, new perspective</p>
-                                        <p class="card-text"><b>REVERSED:</b> delay, resistance, stalling, indecision</p>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <img src="tarot\major\empress.webp" class="img-fluid product" alt="">
+                              <div class="middle">
+                                    <p class="card-text"><b>UPRIGHT:</b> femininity, beauty, nature, nurturing, abundance</p>
+                                    <hr>
+                                    <p class="card-text"><b>REVERSED:</b> creative blocks, dependence on others</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row mt-4">
+                      <div class="col-md-3">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <img src="tarot\major\emperor.webp" class="img-fluid product" alt="">
+                                  <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> authority, establishment, struture, a father figure</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> domination, excessive control, lack of discipline, inflexibility</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <img src="tarot\major\hierophant.webp" class="img-fluid product" alt="">
+                                  <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> spiritual wisdom, religious belief, conformmity, tradition, institutions</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> personal beliefs, freedom, challeging the status quo</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="tarot\major\death.webp" class="img-fluid product" alt="">
-                                        <p class="card-text"><b>UPRIGHT:</b>  endings, change, transformation, transition</p>
-                                        <p class="card-text"><b>REVERSED:</b>  resistance to change, personal transformation, inner purging</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="tarot\major\temperance.jpg" class="img-fluid product" alt="">
-                                        <p class="card-text"><b>UPRIGHT:</b> balance, moderation, patience, purpose</p>
-                                        <p class="card-text"><b>REVERSED:</b> imbalance, excess, self-healing, realignment</p>  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="tarot\major\devil.jpg" class="img-fluid product" alt="">
-                                        <p class="card-text"><b>UPRIGHT:</b> shadow self, attachment, addiction, restriction, sexuality</p>
-                                        <p class="card-text"><b>REVERSED:</b> releasing limitin beliefs, exploring dark thoughts, detachment</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-4">
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <img src="tarot\major\tower.webp" class="img-fluid product" alt="">
-                                            <p class="card-text"><b>UPRIGHT:</b> sudden change, upheaval, chaos, revelation, awakening</p>
-                                            <p class="card-text"><b>REVERSED:</b> personal transformation, fear of change, averting disaster</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <img src="tarot\major\star.jpg" class="img-fluid product" alt="">
-                                            <p class="card-text"><b>UPRIGHT:</b> hope, faith, purpose, renewal, spirituality</p>
-                                            <p class="card-text"><b>REVERSED:</b> lack of faith, despair, self trust, disconnection</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <img src="tarot\major\moon.webp" class="img-fluid product" alt="">
-                                            <p class="card-text"><b>UPRIGHT:</b> illusion, fear, anxiety, subconscious, intuition</p>
-                                            <p class="card-text"><b>REVERSED:</b> release of fear, repressed emotion, inner confusion</p>  
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <img src="tarot\major\sun.webp" class="img-fluid product" alt="">
-                                            <p class="card-text"><b>UPRIGHT:</b> positivity, fun, warmth, success, vitality</p>
-                                            <p class="card-text"><b>REVERSED:</b> inner child, feeling down, overly optimistic</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-4">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="card-body text-center">
-                                                <img src="tarot\major\judgement.webp" class="img-fluid product" alt="">
-                                                <p class="card-text"><b>UPRIGHT:</b> judgement, rebirth, inner calling, absolution</p>
-                                                <p class="card-text"><b>REVERSED:</b> self doubt, inner critic, ignoring the call</p>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <img src="tarot\major\lovers.webp" class="img-fluid product" alt="">
+                                  <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> love, harmony, relationships, values alignment, choices</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> self love, disharmony, imbalance, misalignment of values</p>  
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <img src="tarot\major\chariot.webp" class="img-fluid product" alt="">
+                                  <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> control, willpower, success, action, determination</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> self discipline, opposition, lack of direction</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="row mt-4">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img src="tarot\major\strength.webp" class="img-fluid product" alt="">
+                                      <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> strength, courage, persuation, influence, compassion</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> inner strength, self doubt, low energy, raw emotion</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img src="tarot\major\hermit.webp" class="img-fluid product" alt="">
+                                      <div class="middle">
+                                            <p class="card-text"><b>UPRIGHT:</b> soul searching, introspection, being alone, inner guidance</p>
+                                            <hr>
+                                            <p class="card-text"><b>REVERSED:</b> isolation, loneliness, withdrawal</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img src="tarot\major\wheel.webp" class="img-fluid product" alt="">
+                                      <div class="middle">
+                                            <p class="card-text"><b>UPRIGHT:</b> good luck, karma, life cycles, destiny, a turning point</p>
+                                            <hr>
+                                            <p class="card-text"><b>REVERSED:</b> bad luck, resistance to change, breaking cycles</p>
+                                      </div>  
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img src="tarot\major\justice.webp" class="img-fluid product" alt="">
+                                      <div class="middle">
+                                        <p class="card-text"><b>UPRIGHT:</b> justice, fairness, truth, cause and effect, law</p>
+                                        <hr>
+                                        <p class="card-text"><b>REVERSED:</b> unfairness, lack of accountability, dishonesty</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <div class="row mt-4">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <img src="tarot\major\hanged-man.webp" class="img-fluid product" alt="">
+                                            <div class="middle">
+                                                <p class="card-text"><b>UPRIGHT:</b> paused, surrender, letting go, new perspective</p>
+                                                <hr>
+                                                <p class="card-text"><b>REVERSED:</b> delay, resistance, stalling, indecision</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="card-body text-center">
-                                                <img src="tarot\major\world.webp" class="img-fluid product" alt="">
-                                                <p class="card-text"><b>UPRIGHT:</b> completion, integration, accomplishment, travel</p>
-                                                <p class="card-text"><b>REVERSED:</b> seeking personal closure, short cuts delay</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <img src="tarot\major\death.webp" class="img-fluid product" alt="">
+                                            <div class="middle">
+                                                <p class="card-text"><b>UPRIGHT:</b>  endings, change, transformation, transition</p>
+                                                <hr>
+                                                <p class="card-text"><b>REVERSED:</b>  resistance to change, personal transformation, inner purging</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    
-                
-                
-            </div>
-        </section>
-      </div>
-        
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <img src="tarot\major\temperance.jpg" class="img-fluid product" alt="">
+                                            <div class="middle">
+                                                <p class="card-text"><b>UPRIGHT:</b> balance, moderation, patience, purpose</p>
+                                                <hr>
+                                                <p class="card-text"><b>REVERSED:</b> imbalance, excess, self-healing, realignment</p>
+                                            </div>  
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <img src="tarot\major\devil.jpg" class="img-fluid product" alt="">
+                                            <div class="middle">
+                                                <p class="card-text"><b>UPRIGHT:</b> shadow self, attachment, addiction, restriction, sexuality</p>
+                                                <hr>
+                                                <p class="card-text"><b>REVERSED:</b> releasing limitin beliefs, exploring dark thoughts, detachment</p>
+                                            </div>
+                                      </div>
+                                  </div>
+                              </div>
+  
+                              <div class="row mt-4">
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body text-center">
+                                              <img src="tarot\major\tower.webp" class="img-fluid product" alt="">
+                                                <div class="middle">
+                                                    <p class="card-text"><b>UPRIGHT:</b> sudden change, upheaval, chaos, revelation, awakening</p>
+                                                    <hr>
+                                                    <p class="card-text"><b>REVERSED:</b> personal transformation, fear of change, averting disaster</p>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body text-center">
+                                              <img src="tarot\major\star.jpg" class="img-fluid product" alt="">
+                                                <div class="middle">
+                                                     <p class="card-text"><b>UPRIGHT:</b> hope, faith, purpose, renewal, spirituality</p>
+                                                    <hr>
+                                                    <p class="card-text"><b>REVERSED:</b> lack of faith, despair, self trust, disconnection</p>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body text-center">
+                                              <img src="tarot\major\moon.webp" class="img-fluid product" alt="">
+                                                <div class="middle">
+                                                    <p class="card-text"><b>UPRIGHT:</b> illusion, fear, anxiety, subconscious, intuition</p>
+                                                    <hr>
+                                                    <p class="card-text"><b>REVERSED:</b> release of fear, repressed emotion, inner confusion</p>
+                                                </div>  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body text-center">
+                                              <img src="tarot\major\sun.webp" class="img-fluid product" alt="">
+                                              <div class="middle">
+                                                    <p class="card-text"><b>UPRIGHT:</b> positivity, fun, warmth, success, vitality</p>
+                                                    <hr>
+                                                    <p class="card-text"><b>REVERSED:</b> inner child, feeling down, overly optimistic</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <div class="row mt-4">
+                                      <div class="col-md-3">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <img src="tarot\major\judgement.webp" class="img-fluid product" alt="">
+                                                  <div class="middle">
+                                                        <p class="card-text"><b>UPRIGHT:</b> judgement, rebirth, inner calling, absolution</p>
+                                                        <hr>
+                                                        <p class="card-text"><b>REVERSED:</b> self doubt, inner critic, ignoring the call</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <img src="tarot\major\world.webp" class="img-fluid product" alt="">
+                                                  <div class="middle">
+                                                        <p class="card-text"><b>UPRIGHT:</b> completion, integration, accomplishment, travel</p>
+                                                        <hr>
+                                                        <p class="card-text"><b>REVERSED:</b> seeking personal closure, short cuts delay</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                  
+                 </div> 
+              </div>
+          </section>
+        </div>
 
-
-        
-       
-      <!--footer-->
-      <footer class="container-fluid p-4">
+    <!--footer-->
+       <footer class="container-fluid p-4">
         <div class="row">
             <div class="col-md-8 my-auto">
                 <h2>Contact Us</h2>
                 <p>angelusdimidium@supreme.com</p>
-                <p>(00) 111 222 333 444 </p>
+                <p>(00) 1111 2222 3333 4444 </p>
             </div>
             <div class="col-md-4 my-auto">
                 <p class="fw-bold mb-0">Angelus Dimidium</p>
@@ -320,15 +412,5 @@
         </div>
     </footer>
 
-             
-
-              
-            </div>
-          </div>
-
-
-          
-
-       
     </body>
-</html>
+    </html>
