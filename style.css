@@ -96,6 +96,11 @@ main {
     justify-content: center;
 }
 
+label {
+    font-family: 'Lora', serif;
+    
+}
+
 
 
 /* smartphones */
